@@ -1,7 +1,7 @@
 import express from "express";
-import { authenticateUser } from "../middleware/authenticate";
-import { userModel } from "../models/user";
-import sendResponse from "../helpers/sendResponse";
+import { authenticateUser } from "../middleware/authenticate.js";
+import { userModel } from "../models/user.js";
+import sendResponse from "../helpers/sendResponse.js";
 
 const router = express.Router();
 

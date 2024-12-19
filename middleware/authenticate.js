@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 import "dotenv/config";
-import sendResponse from "../helpers/sendResponse";
-import { userModel } from "../models/user";
+import sendResponse from "../helpers/sendResponse.js";
+import { userModel } from "../models/user.js";
 
 export async function authenticateUser(req, res, next) {
   try {
@@ -11,7 +11,7 @@ export async function authenticateUser(req, res, next) {
     if (!token)
       return sendResponse(res, 403, null, false, "Token not provided.");
 
-    const decodedData = jwt.verify(token, process.env.merntodoapp);
+    const decodedData = jwt.verify(token, process.env.AUTH_SECRET);
     console.log("Decoded data from jwt ======>>>>>>", decodedData);
 
     if (!decodedData)
