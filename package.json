@@ -1,0 +1,25 @@
+{
+  "name": "mern-todo-backend",
+  "version": "1.0.0",
+  "description": "A full-stack web application designed to manage tasks efficiently. It is built using the MERN stack (MongoDB, Express.js, React, Node.js), offering seamless user experiences and robust functionality.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/AhmedShahid786/MERN-TODO-Backend"
+  },
+  "author": "ahmed shahid",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.9"
+  }
+}
