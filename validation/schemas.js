@@ -1,3 +1,5 @@
+//? This file contains the Joi validation schemas for the signup and login routes.
+
 import Joi from "joi";
 
 export const signupSchema = Joi.object({
