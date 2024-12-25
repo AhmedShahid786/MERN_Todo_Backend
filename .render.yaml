@@ -1,0 +1,5 @@
+services:
+  - type: web
+    name: mern-todo-backend
+    buildCommand: "npm install"
+    startCommand: "npm run start"
